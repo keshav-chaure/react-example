@@ -1,0 +1,59 @@
+/* Do not write any CSS in here, add it to the appropriate module or make a new one and import it here */
+
+@charset 'UTF-8';
+
+/* 1. Vendors */
+@import 'vendor/_normalize';
+
+/* 2. Configuration and helpers */
+@import 'utils/_variables';
+@import 'base/_helpers';
+
+/* 3. Base stuff */
+@import 'base/_base';
+@import 'base/_typography';
+
+/* 4. Layout-related sections */
+@import 'layout/_header';
+@import 'layout/_footer';
+
+/* 5. Components */
+@import 'components/_buttons';
+@import 'components/_home';
+@import 'components/_form-page';
+@import 'components/_form';
+@import 'components/_nav';
+@import 'components/_loading-indicator';
+@import 'components/_error-message';
+
+
+.listItem{
+    position: absolute;
+    width: 60%;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    padding: 1em;
+    margin-top: 5em;
+    display: -ms-flexbox;
+/*    display: flex;
+    -ms-flex-align: center;
+    */
+    align-items: center;
+    background-color: #fff;
+    z-index: 1;
+}
+.operation{
+    padding:1em;
+
+}
+#add_new{
+    float: right;
+}
+.class_add_name{float: right;}
+.input-action{
+     box-shadow: 0 0 2px rgba(0,0,0,.5);
+    background-color: #ffe;
+    width: 70%;
+    position: absolute;
+    padding: 2em;
+
+}
